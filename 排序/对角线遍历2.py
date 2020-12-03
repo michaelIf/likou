@@ -24,7 +24,7 @@ def way3(nums):
             tmp[row + col].append(nums[row][col])
     res = []
     for r_plus_c in sorted(list(tmp.keys())):
-        res.append(tmp[r_plus_c][::-1])
+        res.extend(tmp[r_plus_c][::-1])
     return res
 
 nums = [[1,2,3],[4,5,6],[7,8,9]]
