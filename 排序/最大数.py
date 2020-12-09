@@ -13,8 +13,6 @@ class StrLt(str):
         return x + y > y + x
 
 def largestNumber(nums):
-    def lt(x, y):
-        return x + y > y + x
     strn = [str(n) for n in nums]
     strn.sort(key=StrLt)
     return ''.join(strn) if strn[0] != '0' else '0'
