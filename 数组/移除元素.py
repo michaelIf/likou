@@ -28,7 +28,14 @@ def way2(nums, val):
             b += 1
         a += 1
     return b
-        
+
+# 倒序遍历
+# author zhangxu_bme
+def way3(nums, val):
+    for i in range(len(nums)-1, -1, -1):
+        if nums[i] == val:
+            nums.pop(i)
+    return len(nums)
 
 
 
