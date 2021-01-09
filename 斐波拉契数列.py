@@ -1,5 +1,7 @@
 def fb(n):
     if n <= 2:
+        if n == 0:
+            return 0
         return 1
     else:
         return fb(n-1) + fb(n-2)
