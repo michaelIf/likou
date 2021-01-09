@@ -32,8 +32,8 @@ words = ["hello","world","leetcode"]
 chars = "welldonehoneyr"
 print(countCharacters(words, chars))
 
-#
-#
+# author official
+# 直接比较两个字典的值，另类if else
 def way2(words, chars):
     import collections
     chars_cnt = collections.Counter(chars)
