@@ -13,9 +13,9 @@ def maximumProduct(nums):
 
 # 找到3个最大的数和2个最小的数
 def way2(nums):
-    a = b = c = float('inf')
+    a = b = c = float('-inf')
     d = e = float('inf')
-    for i, num in enumerate(nums):
+    for num in nums:
         if num > a:
             a, b, c = num, a, b
         elif num > b:
